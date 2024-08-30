@@ -167,6 +167,29 @@ body{
     transform: scale(1.1);
 }
 
+@keyframes vibrate {
+    0%{
+        transform: rotate(0deg);
+
+    }
+
+    25%{
+        transform: rotate(-5deg);
+    }
+
+    50%{
+        transform: rotate(5deg);
+
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 .img-chair{
     position: absolute;  /*overlap all the chairs*/
@@ -185,6 +208,7 @@ body{
 
 .for-color-1:checked ~ .img-chair-1{
     opacity: 1;
+    animation: vibrate 0.2s;
 }
 
 
@@ -193,6 +217,7 @@ body{
 }
 .for-color-2:checked ~ .img-chair-2{
     opacity: 1;
+    animation: vibrate 0.2s;
 } 
 
 
@@ -201,6 +226,7 @@ body{
 }
 .for-color-3:checked ~ .img-chair-3{
     opacity: 1;
+    animation: vibrate 0.2s;
 }
 
 
@@ -209,6 +235,7 @@ body{
 }
 .for-color-4:checked ~ .img-chair-4{
     opacity: 1;
+    animation: vibrate 0.2s;
 }
 
 
@@ -217,6 +244,7 @@ body{
 }
 .for-color-5:checked ~ .img-chair-5{
     opacity: 1;
+    animation: vibrate 0.2s;
 }
 
 
@@ -225,4 +253,5 @@ body{
 }
 .for-color-6:checked ~ .img-chair-6{
     opacity: 1;
+    animation: vibrate 0.2s;
 }
