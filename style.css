@@ -23,10 +23,103 @@ body{
 .chair-image{
     width: 50%;
     height: 100%;
+    background-image: url("./images/chair1.png");
 }
 
 
 .chair-text{
     width: 50%;
     height: 100%;
+
+    & >p{
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    & >:nth-child(2){     /*immediate second child*/
+        font-size: 1.9em;
+        letter-spacing: 0.05rem;
+        font-weight: 800;
+        color: white;
+    }
+
+    & >:nth-child(3){
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        color: white;
+
+        & >span{
+            padding-left: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.section-fluid{
+
+    & .desc-detail{
+        padding-top: 1.4rem;
+
+        & label{
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding-right: 1rem;
+
+        }
+
+        & input{
+            display: none;
+        }
+    }
+}
+
+.accor-1>p{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-right:10rem;
+    color: white;
+    font-weight: 500;
+}
+
+.accor-2{
+    display: none;
+}
+
+.choose-color{
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 0.8rem;
+}
+.cart-btn-container{
+    margin-top: 3rem;
+    width: 16rem;
+    height: 3rem;
+
+     & #add-to-cart-btn{
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.7rem 2rem;
+        color: white;
+        border: 1px solid white;
+        background-color: darkblue;
+        border: none;
+        width: 80%;
+        height: 100%;
+        font-weight: 500;
+        border-radius: 5px;
+
+        & i{
+            padding-right: 0.5rem;
+        }
+    } 
+    
 }
