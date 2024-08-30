@@ -23,7 +23,6 @@ body{
 .chair-image{
     width: 50%;
     height: 100%;
-    background-image: url("./images/chair1.png");
 }
 
 
@@ -144,6 +143,10 @@ body{
 }
 
 
+
+
+
+
 /*hide all radio buttons*/
 .choose-color~input[type="radio"]{
     display: none;   
@@ -162,4 +165,20 @@ body{
 .choose-color~input[type="radio"]:checked + label{
     border: 2px solid white;
     transform: scale(1.1);
+}
+
+
+.img-chair{
+    position: absolute;  /*overlap all the chairs*/
+    left: 25%;
+    top: 8%;
+    background-image: url("/images/chair1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25%;
+    height: 50%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    /* z-index: 4; */
+    opacity: 1;
 }
