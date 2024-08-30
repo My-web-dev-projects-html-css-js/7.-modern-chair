@@ -9,13 +9,14 @@
 }
 body{
     background-color: gray;
+    overflow-y: hidden;
 }
 
 .main-body{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 480px;
+    /* flex-wrap: wrap; */
+    height: 1600px;
     width: 1000px;
     margin: 5rem auto;
 }
@@ -204,7 +205,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     width: 25%;
-    height: 40%;
+    height: 60%;
     margin-top: 1rem;
     border-radius: 10px;
     /* z-index: 4; */
@@ -260,3 +261,87 @@ body{
     opacity: 1;
     animation: vibrate 0.2s;
 }
+
+
+
+
+/* resposnsive*/ 
+@media screen and (max-width: 1000px){
+    .img-chair{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .main-body{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        /* justify-content: center; */
+    }
+
+    .chair-text{
+        width: 70%;
+        margin-left: 8rem;
+
+        & >p{
+            font-size: 2.5rem;
+        }
+    
+        & >:nth-child(2){     /*immediate second child*/
+            font-size: 4.2em;
+        }
+    
+        & >:nth-child(3){
+            font-size: 3.5rem;
+    
+            & >span{
+                font-size: 2.1rem;
+            }
+        }
+    }
+
+    .img-chair{
+        width: 40rem;
+        height: 30rem;
+    }
+
+    
+    .section-fluid{
+
+        & .desc-detail{
+
+            & label{
+                font-size: 2.6rem;
+            }
+        }
+    }
+
+    .accor-1>p{
+        font-size: 2rem;
+    }
+
+    .choose-color{
+        font-size: 3rem;
+    }
+
+    .choose-color~label{
+        height: 5rem;
+        width: 5rem;
+        margin-left: 0.8rem;
+    }
+    .cart-btn-container{
+        margin-top: 12rem;
+        width: 35rem;
+        height: 6rem;
+
+        & >a{
+            font-size: 3rem;
+        }
+    }
+
+
+}
+
