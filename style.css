@@ -165,14 +165,12 @@ body{
     cursor: pointer;
 }
 
+
+/*hide all radio buttons*/
 .choose-color~input[type="radio"]{
     display: none;   
 }
 
-/*hide all radio buttons*/
-.labels ~ input[type="radio"]{
-    display: none;
-}
 
 
 /*radio button choose color functionality*/
