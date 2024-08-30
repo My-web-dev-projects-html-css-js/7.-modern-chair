@@ -129,11 +129,31 @@ body{
     gap: 0.6rem;
 
     & label{
-        border: 1px solid white;
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
+        cursor: pointer;
     }
+
+    & .color-1{
+        background-image: url("/images/color1.jpg");
+    }
+    & .color-2{
+        background-image: url("/images/color2.jpg");
+    }
+    & .color-3{
+        background-image: url("/images/color3.jpg");
+    }
+    & .color-4{
+        background-image: url("/images/color4.jpg");
+    }
+    & .color-5{
+        background-image: url("/images/color5.jpg");
+    }
+    & .color-6{
+        background-image: url("/images/color6.jpg");
+    }
+    
 }
 
 /*hide all radio buttons*/
