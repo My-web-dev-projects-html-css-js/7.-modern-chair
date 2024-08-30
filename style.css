@@ -120,6 +120,23 @@ body{
         & i{
             padding-right: 0.5rem;
         }
-    } 
-    
+    }    
+}
+
+
+.labels{
+    display: flex;
+    gap: 0.6rem;
+
+    & label{
+        border: 1px solid white;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+    }
+}
+
+/*hide all radio buttons*/
+.labels ~ input[type="radio"]{
+    display: none;
 }
