@@ -180,5 +180,49 @@ body{
     margin-top: 1rem;
     border-radius: 10px;
     /* z-index: 4; */
+    opacity: 0;
+}
+
+.for-color-1:checked ~ .img-chair-1{
+    opacity: 1;
+}
+
+
+.img-chair-2{
+    background-image: url("/images/chair2.png");
+}
+.for-color-2:checked ~ .img-chair-2{
+    opacity: 1;
+} 
+
+
+.img-chair-3{
+    background-image: url("/images/chair3.png");
+}
+.for-color-3:checked ~ .img-chair-3{
+    opacity: 1;
+}
+
+
+.img-chair-4{
+    background-image: url("/images/chair4.png");
+}
+.for-color-4:checked ~ .img-chair-4{
+    opacity: 1;
+}
+
+
+.img-chair-5{
+    background-image: url("/images/chair5.png");
+}
+.for-color-5:checked ~ .img-chair-5{
+    opacity: 1;
+}
+
+
+.img-chair-6{
+    background-image: url("/images/chair6.png");
+}
+.for-color-6:checked ~ .img-chair-6{
     opacity: 1;
 }
