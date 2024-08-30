@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 450px;
+    height: 480px;
     width: 1000px;
     margin: 5rem auto;
 }
@@ -124,7 +124,7 @@ body{
 }
 
 
-.labels{
+/* .labels{
     display: flex;
     gap: 0.6rem;
 
@@ -154,9 +154,29 @@ body{
         background-image: url("/images/color6.jpg");
     }
     
+} */
+
+.choose-color~label{
+    display: inline-block;
+    border: 1px solid white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.choose-color~input[type="radio"]{
+    display: none;   
 }
 
 /*hide all radio buttons*/
 .labels ~ input[type="radio"]{
     display: none;
+}
+
+
+/*radio button choose color functionality*/
+.color-btn:checked + label{
+    border: 2px solid white;
+    transform: scale(1.1);
 }
